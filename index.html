@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Fonte Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 4.1.3 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- CDN dos ícones do Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Personalização do estilo -->
+    <link rel="stylesheet" href="./custom.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary py-3 px-5">
+      <a href="" class="h2 text-primary navbar-brand">LOGOLOGO</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav w-100 d-lg-flex justify-content-around">
+          <li class="nav-item">
+            <a href="" class="nav-link text-secondary">Ver Bilhetes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sorteios" class="nav-link text-secondary">Sorteios</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-secondary">Nosso Suporte</a>
+          </li>
+          <li class="nav-item">
+            <a href="#ganhadores" class="nav-link text-secondary"
+              >Resultados e Ganhadores</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-secondary">Nossos Termos</a>
+          </li>
+        </ul>
+
+        <img
+          class="iconePerfil"
+          src="./ref/img/icone.avif"
+          alt="Ícone de perfil"
+          style="height: 40px; width: 40px"
+        />
+      </div>
+    </nav>
+
+    <hr class="separador" />
+
+    <section class="d-flex h-50 position-relative">
+      <div class="hero-content bg-primary w-50 p-5">
+        <h1>
+          A sua chance de
+          <i class="text-primary">ganhar um grande prêmio chegou!</i>
+        </h1>
+
+        <p class="pr-3 py-4">
+          Agora é sua change de ganhar! Confira os prêmios que você pode ganhar
+          em nossos sorteios. Você será o próximo sortudo?
+        </p>
+
+        <button class="diagonal-button" type="button">
+          <span> PARTICIPE AGORA </span>
+        </button>
+
+        <div class="mt-4 d-flex pr-5">
+          <p class="mb-0">ME SIGA NAS REDES SOCIAIS</p>
+          <a href="#"
+            ><img src="facebook-icon.png" alt="Facebook" class="mx-2"
+          /></a>
+          <a href="#"
+            ><img src="instagram-icon.png" alt="Instagram" class="mx-2"
+          /></a>
+          <p class="mb-0">E FIQUE POR DENTRO DAS NOVIDADES</p>
+        </div>
+      </div>
+
+      <div class="hero w-100"></div>
+    </section>
+
+    <div
+      class="container border border-secondary rounded-2 mt-3 bg-primary-variant text-center"
+    >
+      <section id="sorteios" class="">
+        <h2>
+          Participe de <strong class="text-primary">nossos sorteios</strong>
+          <br />
+          você também pode ganhar!
+        </h2>
+
+        <div class="d-sm-flex justify-content-around">
+          <div class="card bg-primary p-4" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./ref//img/carrossel/carrossel1.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Sorteio n°: 02/2024</h5>
+              <p class="card-subtitle text-muted">
+                sorteio dia 13/04/24 às 18:00
+              </p>
+
+              <p>Título <strong class="text-primary">R$00,99</strong></p>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn btn-secondary diagonal-button">
+                <span>Participar</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="card bg-primary p-4" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./ref//img/carrossel/carrossel1.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Sorteio n°: 02/2024</h5>
+              <p class="card-subtitle text-muted">
+                sorteio dia 13/04/24 às 18:00
+              </p>
+
+              <p>Título <strong class="text-primary">R$00,99</strong></p>
+            </div>
+
+            <div class="card-footer">
+              <button class="btn btn-secondary diagonal-button">
+                <span>Participar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ganhadores">
+        <h2 class="my-5">Últimos <i class="text-primary">Ganhadores</i></h2>
+
+        <div class="carousel-container" style="overflow: hidden; width: 100%">
+          <div class="carousel d-flex">
+            <div class="card bg-primary mx-2 text-left" style="width: 300px">
+              <img
+                class="card-img-top"
+                src="./ref/img/carrossel/carrossel2.png"
+                alt="Card image cap"
+              />
+              <h5 class="card-title p-2 bg-secondary w-75">
+                Sorteio n°: 02/2024
+              </h5>
+              <div class="card-body">
+                <strong> R$100.000,00</strong> - Valor Líquido <br />
+                o sorteio aconteceu no dia <br />
+                <strong>Sábado Abril 20, 2020</strong>
+                <p class="card-text">
+                  <i class="bi bi-trophy"></i> José Paulo da Silva
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-secondary">Ver reação</a>
+              </div>
+            </div>
+
+            <div class="card bg-primary mx-2 text-left" style="width: 300px">
+              <img
+                class="card-img-top"
+                src="./ref/img/carrossel/carrossel1.png"
+                alt="Card image cap"
+              />
+              <h5 class="card-title p-2 bg-secondary w-75">
+                Sorteio n°: 02/2024
+              </h5>
+              <div class="card-body">
+                <strong> R$100.000,00</strong> - Valor Líquido <br />
+                o sorteio aconteceu no dia <br />
+                <strong>Sábado Abril 20, 2020</strong>
+                <p class="card-text">
+                  <i class="bi bi-trophy"></i> José Paulo da Silva
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-secondary">Ver reação</a>
+              </div>
+            </div>
+            <div class="card bg-primary mx-2 text-left" style="width: 300px">
+              <img
+                class="card-img-top"
+                src="./ref/img/carrossel/carrossel2.png"
+                alt="Card image cap"
+              />
+              <h5 class="card-title p-2 bg-secondary w-75">
+                Sorteio n°: 02/2024
+              </h5>
+              <div class="card-body">
+                <strong> R$100.000,00</strong> - Valor Líquido <br />
+                o sorteio aconteceu no dia <br />
+                <strong>Sábado Abril 20, 2020</strong>
+                <p class="card-text">
+                  <i class="bi bi-trophy"></i> José Paulo da Silva
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-secondary">Ver reação</a>
+              </div>
+            </div>
+
+            <div class="card bg-primary mx-2 text-left" style="width: 300px">
+              <img
+                class="card-img-top"
+                src="./ref/img/carrossel/carrossel1.png"
+                alt="Card image cap"
+              />
+              <h5 class="card-title p-2 bg-secondary w-75">
+                Sorteio n°: 02/2024
+              </h5>
+              <div class="card-body">
+                <strong> R$100.000,00</strong> - Valor Líquido <br />
+                o sorteio aconteceu no dia <br />
+                <strong>Sábado Abril 20, 2020</strong>
+                <p class="card-text">
+                  <i class="bi bi-trophy"></i> José Paulo da Silva
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-secondary">Ver reação</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
