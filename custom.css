@@ -1,0 +1,158 @@
+:root {
+  --primary: #000024;
+  --primary-variant: #111135;
+  --secondary: #f6571c;
+  --secondary-variant: #e53e00;
+  --tertiary: #25eb50;
+
+  --font-primary: #f6571c;
+  --font-secondary: #ffffff;
+  --font-tertiary: #111135;
+}
+
+body {
+  color: var(--font-secondary);
+  background-color: var(--primary);
+}
+
+/* Cores para o texto */
+.text-primary {
+  color: var(--font-primary) !important;
+}
+.text-secondary {
+  color: var(--font-secondary) !important;
+}
+.text-tertiary {
+  color: var(--font-tertiary) !important;
+}
+
+/* Cores para o fundo */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.bg-primary-variant {
+  background-color: var(--primary-variant) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+/* Cores para bordas */
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+.border-secondary {
+  border-color: var(--secondary) !important;
+}
+
+/* Cores para botões */
+.btn-primary {
+  background-color: var(--primary) !important;
+}
+
+.btn-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.navbar-toggler {
+  border: none;
+  color: var(--secondary);
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-color: var(--secondary);
+  border-radius: 2px;
+}
+.iconePerfil {
+  height: 80px;
+  width: 80px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.separador {
+  border: 3px solid var(--secondary);
+  margin: 0;
+}
+
+.hero-content {
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.hero {
+  background-image: url("./ref/img/banner/banner2.jpeg");
+  background-size: cover;
+}
+
+.diagonal-button {
+  background: var(--secondary);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  width: 200px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+.diagonal-button span {
+  display: block;
+  margin: 0;
+  text-transform: uppercase;
+  transform: skew(21deg);
+}
+
+.card-diagonal {
+  width: 300px;
+  height: 400px;
+  background-color: #000024;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  flex-shrink: 0;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #f6571c;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
